@@ -1,0 +1,26 @@
+{
+    "Sample Author": {
+        "@context": "http://www.schema.org",
+        "@type": "Person",
+        "@id": "https://example.com/",
+        "name": "Sample Author",
+        "alternateName": "Sample Author",
+        "nationality": "Nationality",
+        "gender": "Gender",
+        "jobTitle": "Job Title",
+        "worksFor": [
+            {
+                "@type": "Organization",
+                "name": "Sample Organization",
+                "sameAs": [
+                    "https://www.sample-organization.com/"
+                ]
+            }
+        ],
+        "url": "https://example.com/",
+        "image": "https://example.com/meta-img.jpg",
+        "sameAs": [
+            "https://example.com/"
+        ]
+    }
+}

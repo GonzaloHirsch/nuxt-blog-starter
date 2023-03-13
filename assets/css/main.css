@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    @apply text-h1_sm leading-h1_sm mb-6;
+}
+
+h2 {
+    @apply text-h2_sm leading-h2_sm mb-4;
+}
+
+h3 {
+    @apply text-h3_sm leading-h3_sm mb-4;
+}
+
+h4 {
+    @apply text-h4_sm leading-h4_sm mb-2;
+}
+
+h5 {
+    @apply text-h5_sm leading-h5_sm mb-1;
+}
+
+@screen md {
+    h1 {
+        @apply text-h1 leading-h1;
+    }
+
+    h2 {
+        @apply text-h2 leading-h2;
+    }
+
+    h3 {
+        @apply text-h3 leading-h3;
+    }
+
+    h4 {
+        @apply text-h4 leading-h4;
+    }
+
+    h5 {
+        @apply text-h5 leading-h5;
+    }
+}
+
+/* Body Text */
+
+p {
+    @apply text-base leading-base;
+}
+
+/* Blog Headings */
+
+.blog-content h1 {
+    @apply mt-16;
+}
+
+.blog-content h2 {
+    @apply mt-8;
+}
+
+.blog-content h3 {
+    @apply mt-6;
+}
+
+.blog-content h4 {
+    @apply mt-4;
+}
+
+.blog-content h5 {
+    @apply mt-4;
+}
+
+/* Blog Content */
+
+.blog-content > p + p,
+.blog-content > ul + p,
+.blog-content > ol + p,
+.blog-content > p + ul,
+.blog-content > p + ol {
+    @apply mt-4;
+}
+
+/* Blog Body */
+
+.blog-content p,
+.blog-content ol,
+.blog-content ul {
+    @apply text-lg leading-h5;
+}
+
+/* Blog Breadcrumbs */
+
+.blog-breadcrumb {
+    @apply inline-block text-center font-light;
+}
+
+.blog-breadcrumb > span {
+    @apply mx-1 inline;
+}
+
+.blog-breadcrumb > li {
+    @apply inline;
+}
+
+.blog-breadcrumb > li a {
+    @apply text-brand_primary;
+}
+
+.blog-breadcrumb > li a:hover {
+    @apply underline;
+}
+
+/* Blog Aside */
+
+.blog-aside-title {
+    @apply uppercase font-extrabold text-xs leading-xs;
+}
+
+/* Blog Links */
+
+.blog-content :not(h1):not(h2):not(h3):not(h4):not(h5) a {
+    @apply underline font-bold text-brand_primary;
+}
